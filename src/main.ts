@@ -89,7 +89,7 @@ async function main() {
       remote: string = (
         await readJson(
           packageFileURL,
-          isPackageFileURLBefore && token ? token : undefined
+          token ? token : undefined
         )
       )?.version
     if (!local || !remote) {
